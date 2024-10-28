@@ -1,0 +1,13 @@
+QUESTION 1: What is the initial value of the semaphore variable?
+    The initial value of the semaphor variable is 1. This is from line 14 where the semaphore variable initialized.
+    The 3rd argument of the initialization states that the initial value is 1.
+
+---------------------------------------------------------------------------------------------------------
+QUESTION 2: What is the significance of using sleep(1) function in the functions fun1() and fun2()?
+    The sleep(1) function allows for a context switch to occur. The delay is 1 second long.
+    fun1() would sleep so that fun2() would be able to run its critical section.
+    fun2() would sleep so that fun1() could run its critical section.
+---------------------------------------------------------------------------------------------------------
+QUESTION 3: What will be the initial value of the semaphore variable if there are 5 instances of the resource? 
+    The initial value of the semaphore would be 4. Again, in line 14, the semaphore variable would be initialized.
+    The 3rd argument would 5. 5 threads would be accessing the resources.
